@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
+    
     <h1>Rock Paper Scissors</h1>
     <p id="description">Score 5 Points to Win the Game!</p>
     <p id="result">Pick your weapon</p>
@@ -17,6 +18,20 @@
         <p>-</p>
         <p id="compScore">0</p>
     </div>
+
+    <div class="container">
+        <div id="rock" onclick="startGame(this)" class="option">
+            <img src="images/icon-rock.svg" alt="Rock hand icon">
+        </div>
+        <div id="paper" onclick="startGame(this)" class="option">
+            <img src="images/icon-paper.svg" alt="Paper hand icon">
+        </div>
+        <div id="scissors" onclick="startGame(this)" class="option">
+            <img src="images/icon-scissors.svg" alt="Scissors hand icon">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
     
 </body>
 </html>
