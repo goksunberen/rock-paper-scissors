@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background: rgb(5,2,46);
+    background: linear-gradient(90deg, rgba(5,2,46,1) 0%, rgba(11,11,75,1) 50%, rgba(37,4,75,1) 100%);
+}
+
+h1{
+    font-family: VT323, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(226, 168, 21);
+    text-transform: uppercase;
+}
+
+p{
+    font-family: VT323;
+    color:rgb(226, 168, 21);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 9.5rem;
+    margin-top: 3rem;
+}
