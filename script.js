@@ -35,6 +35,7 @@ function gameRound(playerSelection, compSelection){
         result.textContent = "PLAY AGAIN";
         result.style.border = "2px solid";
         result.style.cursor = "pointer";
+        result.addEventListener("click", restartGame);
     }
 }
 
@@ -70,5 +71,31 @@ function restartGame(){
     result.style.color = "rgb(226, 168, 21)";
     result.style.pointerEvents = "none";
     result.style.border = "none";
+    enableClick();
+}
+
+function playWinMusic(){
+    let audio = new Audio("./audio/success.mp3");
+    audio.play();
+}
+
+function playLoseMusic(){
+    let audio = new Audio("./audio/fail.mp3");
+    audio.play();
+}
+
+function playTieMusic(){
+    let audio = new Audio("./audio/tie.mp3");
+    audio.play();
+}
+
+function playFinalWinMusic(){
+    let audio = new Audio("./audio/finalwin.mp3");
+    audio.play();
+}
+
+function playGameOverMusic(){
+    let audio = new Audio("./audio/gameover.mp3");
+    audio.play();
 }
 
