@@ -16,14 +16,17 @@ function gameRound(playerSelection, compSelection){
     result.textContent = `You chose ${playerSelection}, computer chose ${compSelection}!`;
 
     if(playerSelection == compSelection){
+        playTieMusic();
         description.textContent = "IT'S A TIE!";
     }
     else if((playerSelection == "rock" && compSelection == "paper") || (playerSelection == "paper" && compSelection == "scissors") || (playerSelection == "scissors" && compSelection == "rock")){
+        playLoseMusic();
         description.textContent = "YOU LOST!";
         compScore += 1;
         compText.textContent = compScore;
     }
     else if((playerSelection == "rock" && compSelection == "scissors") || (playerSelection == "paper" && compSelection == "rock") || (playerSelection == "scissors" && compSelection == "paper")){
+        playWinMusic();
         description.textContent = "YOU WON!";
         userScore += 1;
         userText.textContent = userScore;
@@ -31,7 +34,7 @@ function gameRound(playerSelection, compSelection){
 
     if(userScore == 5 || compScore == 5){
         disableClick();
-        userScore > compScore ? (description.textContent = "YOU WON THE GAME!") : (description.textContent = "GAME OVER!");
+        userScore > compScore ? (description.textContent = "YOU WON THE GAME!", playFinalWinMusic()) : (description.textContent = "GAME OVER!", playGameOverMusic());
         result.textContent = "PLAY AGAIN";
         result.style.border = "2px solid";
         result.style.cursor = "pointer";
