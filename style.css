@@ -67,3 +67,9 @@ p{
     padding: 1rem;
 }
 
+.footer, a{
+    margin-top: 5rem;
+    text-decoration: none;
+    color: rgb(226, 168, 21);
+}
+
