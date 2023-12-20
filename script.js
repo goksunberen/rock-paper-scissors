@@ -30,6 +30,7 @@ function gameRound(playerSelection, compSelection){
     }
 
     if(userScore == 5 || compScore == 5){
+        disableClick();
         userScore > compScore ? (description.textContent = "YOU WON THE GAME!") : (description.textContent = "GAME OVER!");
         result.textContent = "PLAY AGAIN";
         result.style.border = "2px solid";
@@ -50,4 +51,18 @@ function disableClick(){
     document.getElementById("rock").style.pointerEvents = "none";
     document.getElementById("paper").style.pointerEvents = "none";
     document.getElementById("scissors").style.pointerEvents = "none";
+}
+
+
+function restartGame(){
+    userScore = 0;
+    compScore = 0;
+    description.textContent = "Score 5 Points to Win the Game!";
+    result.textContent = "Pick your weapon";
+    userText.textContent = userScore;
+    compText.textContent = compScore;
+    result.style.backgroundColor = "transparent";
+    result.style.color = "rgb(226, 168, 21)";
+    result.style.pointerEvents = "none";
+    result.style.border = "none";
 }
