@@ -72,7 +72,6 @@ function restartGame(){
     compText.textContent = compScore;
     result.style.backgroundColor = "transparent";
     result.style.color = "rgb(226, 168, 21)";
-    result.style.pointerEvents = "none";
     result.style.border = "none";
     enableClick();
 }
@@ -101,4 +100,3 @@ function playGameOverMusic(){
     let audio = new Audio("./audio/gameover.mp3");
     audio.play();
 }
-
