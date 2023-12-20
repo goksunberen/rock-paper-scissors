@@ -59,3 +59,11 @@ p{
 .option:hover{
     background-color: rgb(215, 199, 158);
 }
+
+#result{
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    padding: 1rem;
+}
+
