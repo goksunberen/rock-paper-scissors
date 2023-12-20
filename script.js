@@ -53,6 +53,11 @@ function disableClick(){
     document.getElementById("scissors").style.pointerEvents = "none";
 }
 
+function enableClick(){
+    document.getElementById("rock").style.pointerEvents = "auto";
+    document.getElementById("paper").style.pointerEvents = "auto";
+    document.getElementById("scissors").style.pointerEvents = "auto";
+}
 
 function restartGame(){
     userScore = 0;
@@ -66,3 +71,4 @@ function restartGame(){
     result.style.pointerEvents = "none";
     result.style.border = "none";
 }
+
