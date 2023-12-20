@@ -39,3 +39,15 @@ p{
 .scoreboard p{
     font-size: 3rem;
 }
+
+.option{
+    width: 150px;
+    background-color: rgb(232, 224, 203);
+    border: 5px solid rgba(154, 81, 12, 0.703);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
