@@ -45,3 +45,9 @@ function getComputerSelection(){
 function startGame(option){
     gameRound(option.id, getComputerSelection());
 }
+
+function disableClick(){
+    document.getElementById("rock").style.pointerEvents = "none";
+    document.getElementById("paper").style.pointerEvents = "none";
+    document.getElementById("scissors").style.pointerEvents = "none";
+}
