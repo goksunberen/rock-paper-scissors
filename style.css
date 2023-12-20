@@ -27,3 +27,15 @@ p{
     height: 9.5rem;
     margin-top: 3rem;
 }
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 50px;
+}
+
+.scoreboard p{
+    font-size: 3rem;
+}
