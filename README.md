@@ -1,6 +1,8 @@
 # Rock Paper Scissors Game
 A simple UI for Rock Paper Scissors game made with HTML, CSS and JavaScript.
 
+Live demo: https://goksunberen.github.io/rock-paper-scissors/index.html
+
 The game includes sound effects for win, lose and tie situations. 
 
 The audios are taken from:
